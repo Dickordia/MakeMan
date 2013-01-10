@@ -13,6 +13,9 @@
 		0DCDDD3A169F62D5009247DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDDD38169F62D5009247DE /* InfoPlist.strings */; };
 		0DCDDD3C169F62D5009247DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDDD3B169F62D5009247DE /* main.m */; };
 		0DCDDD40169F62D5009247DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDDD3F169F62D5009247DE /* AppDelegate.m */; };
+		0DCDDD49169F6321009247DE /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDDD47169F6321009247DE /* MainView.m */; };
+		0DCDDD4A169F6321009247DE /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDDD48169F6321009247DE /* MainView.xib */; };
+		0DCDDD50169F6B54009247DE /* Layer 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDDD4F169F6B54009247DE /* Layer 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,16 @@
 		0DCDDD2F169F62D5009247DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0DCDDD31169F62D5009247DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0DCDDD33169F62D5009247DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0DCDDD37169F62D5009247DE /* MakeMan-Info.plist */ = {isa = PBXFileReference; path = "MakeMan-Info.plist"; sourceTree = "<group>"; };
+		0DCDDD37169F62D5009247DE /* MakeMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MakeMan-Info.plist"; sourceTree = "<group>"; };
 		0DCDDD39169F62D5009247DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DCDDD3B169F62D5009247DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0DCDDD3D169F62D5009247DE /* MakeMan-Prefix.pch */ = {isa = PBXFileReference; path = "MakeMan-Prefix.pch"; sourceTree = "<group>"; };
-		0DCDDD3E169F62D5009247DE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0DCDDD3D169F62D5009247DE /* MakeMan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeMan-Prefix.pch"; sourceTree = "<group>"; };
+		0DCDDD3E169F62D5009247DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DCDDD3F169F62D5009247DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DCDDD46169F6321009247DE /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		0DCDDD47169F6321009247DE /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		0DCDDD48169F6321009247DE /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		0DCDDD4F169F6B54009247DE /* Layer 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 1.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,9 @@
 				0DCDDD3E169F62D5009247DE /* AppDelegate.h */,
 				0DCDDD3F169F62D5009247DE /* AppDelegate.m */,
 				0DCDDD36169F62D5009247DE /* Supporting Files */,
+				0DCDDD46169F6321009247DE /* MainView.h */,
+				0DCDDD47169F6321009247DE /* MainView.m */,
+				0DCDDD48169F6321009247DE /* MainView.xib */,
 			);
 			path = MakeMan;
 			sourceTree = "<group>";
@@ -82,6 +92,7 @@
 		0DCDDD36169F62D5009247DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0DCDDD4F169F6B54009247DE /* Layer 1.png */,
 				0DCDDD37169F62D5009247DE /* MakeMan-Info.plist */,
 				0DCDDD38169F62D5009247DE /* InfoPlist.strings */,
 				0DCDDD3B169F62D5009247DE /* main.m */,
@@ -141,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCDDD3A169F62D5009247DE /* InfoPlist.strings in Resources */,
+				0DCDDD4A169F6321009247DE /* MainView.xib in Resources */,
+				0DCDDD50169F6B54009247DE /* Layer 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +166,7 @@
 			files = (
 				0DCDDD3C169F62D5009247DE /* main.m in Sources */,
 				0DCDDD40169F62D5009247DE /* AppDelegate.m in Sources */,
+				0DCDDD49169F6321009247DE /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +233,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeMan/MakeMan-Prefix.pch";
 				INFOPLIST_FILE = "MakeMan/MakeMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -230,6 +245,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeMan/MakeMan-Prefix.pch";
 				INFOPLIST_FILE = "MakeMan/MakeMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
